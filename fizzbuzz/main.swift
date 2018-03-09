@@ -8,5 +8,24 @@
 
 import Foundation
 
-print("Hello, World!")
+func FizzBuzz(x:Int) -> String{
+    switch x {
+    case (let n) where (n % 5) == 0 && (n % 3) == 0:
+        return "FizzBuzz"
+    case (let n) where (n % 3) == 0:
+        return "Fizz"
+    case (let n) where (n % 5) == 0:
+        return "Buzz"
+    default:
+        return String(x)
+    }
+}
 
+func main() {
+    print("Please Input Number")
+    let n:String = readLine()!
+    let r = FizzBuzz(x:Int(n)!)
+    print(r)
+}
+
+main()
