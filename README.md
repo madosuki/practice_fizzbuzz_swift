@@ -1,0 +1,2 @@
+# practice_fizzbuzz_swift
+練習がてらに書いてみたSwift4でのFizzBuzz
